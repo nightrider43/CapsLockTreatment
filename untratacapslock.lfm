@@ -1,0 +1,48 @@
+object frmTrataCapsLock: TfrmTrataCapsLock
+  Tag = -2
+  Left = 400
+  Height = 24
+  Hint = 'Indica Status das Teclas Caps Lock On/Off e Num Lock On/Off'
+  Top = 200
+  Width = 50
+  Anchors = [akRight, akBottom]
+  BorderStyle = bsNone
+  ClientHeight = 24
+  ClientWidth = 120
+  Color = 4227327
+  FormStyle = fsSystemStayOnTop
+  ShowHint = True
+  LCLVersion = '4.0.0.4'
+  Visible = True
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnShow = FormShow
+  object edtIndicaCapsLock: TEdit
+    Left = 0
+    Height = 23
+    Top = 1
+    Width = 24
+    Color = clWindow
+    Enabled = False
+    TabOrder = 0
+    Text = 'Off'
+  end
+  object edtIndicaNumLock: TEdit
+    Left = 26
+    Height = 23
+    Top = 1
+    Width = 23
+    Enabled = False
+    TabOrder = 1
+    Text = 'Off'
+  end
+  object Timer1: TTimer
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 48
+  end
+end

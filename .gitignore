@@ -1,0 +1,46 @@
+# Executáveis
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+
+# Arquivos de compilação
+*.o
+*.ppu
+*.dcu
+*.s
+*.res
+*.map
+*.bak
+*.lrs
+*.rsc
+
+# Pastas de saída do compilador
+lib/
+unit/
+*.compiled
+
+# Lazarus IDE files
+*.lps
+*.lpi
+*.lps~
+*.lpi~
+*.lpk
+
+# Project specific
+*.bak
+*.old
+*.obj
+*.ident
+*.stat
+*.tds
+
+# Debugging files
+*.dbg
+*.d
+
+# Outros
+*.~
+# Binários
+*.bin
